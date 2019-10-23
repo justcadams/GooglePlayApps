@@ -1,9 +1,9 @@
 //
 // Created by PC on 9/30/2019.
 //
-#include "stack.h"
-#include "queue.h"
-#include "applications.h"
+#include "Stack.h"
+#include "Queue.h"
+#include "Applications.h"
 
 int main() {
     vector<int> intVec = {0,1,2,3,4,5,6,7,8,9};

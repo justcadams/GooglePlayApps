@@ -73,3 +73,7 @@ This requires a separate field that doubles the number of pointers in the data s
 ### The order of the integers after popping them off the queue is the following: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 ### The order of the integers before pushing them on the stack is the following: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 ### The order of the integers after popping them off the stack is the following: 9, 8, 7, 6, 5, 4, 3, 2, 1
+
+#Testing
+How can you demonstrate in your code that your Queue class works correctly? The main function tests the queue and stack class extensively. All of these functions have been ported in to a test suite for the queue and stack class.
+How can you use the integer and string Queue objects to show this? The integer and string queue objects print out values as they enter and exit the queue and stack, which leads to an interpretation that the object is operating as it is designed.

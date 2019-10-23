@@ -1,4 +1,4 @@
-#include "applications.h"
+#include "Applications.h"
 
 int main() {
     // Run all test cases

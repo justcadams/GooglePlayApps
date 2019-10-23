@@ -7,7 +7,8 @@
 
 #include <iostream>
 #include <vector>
-#include "node.h"
+#include "Node.h"
+#include "Applications.h"
 
 using namespace std;
 
@@ -136,7 +137,29 @@ public:
 };
 
 void testQueueClass() {
-
+    cout << "Testing queue class." << endl;
+    vector<int> intVec = {0,1,2,3,4,5,6,7,8,9};
+    vector<string> stringVec = {"Ha", "Ma", "Pa", "Sa", "Da", "Ba", "Ca", "Ra", "Ta", "Za"};
+    vector<Applications> appsVec;
+    string filename = "googleplaystore.csv";
+    readApplicationsFromFile(filename, appsVec);
+    // Create a queue of integers
+    auto intQueue = Queue<optional<int>>();
+    // Create a queue of strings
+    auto stringQueue = Queue<optional<string>>();
+    // Create a queue of apps
+    auto appsQueue = Queue<optional<Applications>>();
+    // Print and push 10 objects each
+    for(int i : intVec) {
+        intQueue.enqueue(i);
+    }
+    for(string &i : stringVec) {
+        stringQueue.enqueue(i);
+    }
+    for(int i = 0; i < 10; ++i) {
+        cout << appsVec[i] << endl;
+        appsQueue.enqueue(appsVec[i]);
+    }
 }
 
 #endif //GOOGLEPLAYAPPS_QUEUE_H

@@ -6,7 +6,8 @@
 #define GOOGLEPLAYAPPS_STACK_H
 
 #include <optional>
-#include "node.h"
+#include <iostream>
+#include "Node.h"
 
 using namespace std;
 
@@ -103,7 +104,12 @@ public:
 };
 
 void testStackClass() {
-
+    cout << "Testing queue class." << endl;
+    vector<int> intVec = {0,1,2,3,4,5,6,7,8,9};
+    vector<string> stringVec = {"Ha", "Ma", "Pa", "Sa", "Da", "Ba", "Ca", "Ra", "Ta", "Za"};
+    vector<Applications> appsVec;
+    string filename = "googleplaystore.csv";
+    readApplicationsFromFile(filename, appsVec);
 }
 
 #endif //GOOGLEPLAYAPPS_STACK_H
