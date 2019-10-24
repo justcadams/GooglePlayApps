@@ -63,19 +63,20 @@
 /***************************************************************************************/
 
 #include "Algorithms.h"
+#include "Applications.h"
 
 int main() {
-    const int size = 10840;
-    auto alg = new Algorithms();
+    auto alg = new Algorithms<int>();
+    alg->testAlgorithms();
     alg->setStart(0);
     alg->setEnd(10840);
     vector<int> sequence;
     vector<int> random;
     vector<int> duplicates;
     vector<int> primes;
-    alg->integerArray(0, 10840, sequence);
-    alg->randomIntegerArray(0, 10840, random);
-    alg->duplicatesIntegerArray(0, 10840, 5, duplicates);
+    sequence = alg->integerVector(0, 10840);
+    random = alg->randomIntegerVector(0, 10840);
+    duplicates = alg->duplicatesIntegerVector(0, 10840, 5);
     primes = alg->sieveOfAtkin(10840);
-    Algorithms::outputTerminal(sequence, random, duplicates, primes, 10840);
+    alg->outputTerminal(sequence, random, duplicates, primes, 10840);
 }

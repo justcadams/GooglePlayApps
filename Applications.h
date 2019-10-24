@@ -344,6 +344,39 @@ public:
     }
 
     /*
+     *  Requires:   @param &lhs - Appplication to compare in less than equality operator.
+     *              @param &rhs - Application to compare in less than equality operator.
+     *  Modifies:   nothing
+     *  Effects:    Returns true if the left hand side application name appears first alphabetically.
+     */
+
+    bool friend operator < (const Applications &lhs, const Applications &rhs) {
+        return (lhs.getName() < rhs.getName());
+    }
+
+    /*
+     *  Requires:   @param &lhs - Appplication to compare in less than equality operator.
+     *              @param &rhs - Application to compare in less than equality operator.
+     *  Modifies:   nothing
+     *  Effects:    Returns true if the right hand side application name appears first alphabetically.
+     */
+
+    bool friend operator > (const Applications &lhs, const Applications &rhs) {
+        return (lhs.getName() > rhs.getName());
+    }
+
+    /*
+     *  Requires:   @param &lhs - Appplication to compare in less than equality operator.
+     *              @param &rhs - Application to compare in less than equality operator.
+     *  Modifies:   nothing
+     *  Effects:    Returns true if the left hand side application name appears first alphabetically.
+     */
+
+    bool friend operator == (const Applications &lhs, const Applications &rhs) {
+        return (lhs.getName() == rhs.getName());
+    }
+
+    /*
      * Requires: @param appUpdated - String containing the new android version number (int.int.int...etc format)
      * Modifies: @field lastUpdated - String containing the old android version number
      * Effects: Sets the android version number
