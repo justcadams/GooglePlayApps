@@ -9,6 +9,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 #add_executable(Algorithms Algorithms.h algorithmsTest.cpp)
 
-add_executable(Applications.h Algorithms.h SplayTree.h AVLTree.h BinarySearchTree.h main.cpp)
+#add_executable(Applications.h Algorithms.h SplayTree.h AVLTree.h BinarySearchTree.h maintrees.cpp)
+
+add_executable(Applications.h Algorithms.h main.cpp)
 
 #add_compile_options(g++ -Wall -Wextra -g)
