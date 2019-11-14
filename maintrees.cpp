@@ -1,3 +1,7 @@
+// Created by Justin C. Adams 30 October 2019
+// This is the main.cpp file for analyzing tree data structures.
+// The Binary Search Tree, AVL Tree, and Splay Tree were compared and contrasted
+// Metrics used for comparing these data structures were complexity, memory, and search depth.
 #include <fstream>
 #include "Algorithms.h"
 #include "Applications.h"

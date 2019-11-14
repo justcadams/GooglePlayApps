@@ -455,7 +455,6 @@ void readApplicationsFromFile(string &fileName, vector<Applications> &applicatio
 
         appStream.open("../" + fileName);
 
-
         getline(appStream, header);
 
         while(appStream && appStream.peek() != EOF) {

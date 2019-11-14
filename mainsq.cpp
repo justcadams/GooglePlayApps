@@ -1,6 +1,7 @@
-//
-// Created by PC on 9/30/2019.
-//
+// Created by Justin C. Adams 30 September 2019
+// This is the main.cpp file for analyzing stacks and queues.
+// The Stack and Queue data structure were compared and contrasted.
+// Metrics used for comparing these data structures were complexity and memory.
 #include "Stack.h"
 #include "Queue.h"
 #include "Applications.h"
